@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+:root {
+  --color-primary: hsl(12, 88%, 59%);
+  --color-secondary: hsl(228, 39%, 23%);
+  --color-secondary-dark: hsl(233, 12%, 13%);
+  --color-primary-light: hsl(13, 100%, 96%);
+  --color-neutral-light: hsl(0, 0%, 98%);
+  --color-neutral-dark: hsl(227, 12%, 61%);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8125rem 1.875rem;
+  border-radius: 2rem;
+}
+
+/* Utility Class */
+.container {
+  padding: 0 1.5625rem;
+  margin: 0 auto;
+  max-width: 75rem;
+  text-align: center;
+}
+
+.btn-accent {
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+}
+
+.btn-light {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-dark {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-neutral-light);
+}
+
+.bg-accent {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-light);
+}
+
+/* Component */
+.nav__list {
+  display: none;
+}

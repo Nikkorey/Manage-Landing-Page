@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | Manage landing page</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="dist/css/styles.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -17,57 +20,91 @@
 <body>
 
   <nav class="nav">
-    <li class="nav__item"><a href="#" class="nav__item-link"></a>Pricing</li>
-    <li class="nav__item"><a href="#" class="nav__item-link">Product</a></li>
-    <li class="nav__item"><a href="#" class="nav__item-link">About us</a></li>
-    <li class="nav__item"><a href="#" class="nav__item-link">Careers</a></li>
-    <li class="nav__item"><a href="#" class="nav__item-link">Community</a></li>
+    <div class="container">
+      <div class="flex">
+        <h1><img src="./images/logo.svg" alt="Manage Logo" class="nav__logo"></h1>
 
-    <a href="#" class="btn">Get Started</a>
+        <div class="nav__menu">
+          <img src="./images/icon-close.svg" alt="">
+          <img src="./images/icon-hamburger.svg" alt="">
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link"></a>Pricing</li>
+          <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Community</a></li>
+          <li><a href="#" class="btn">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
   
   <header class="header">
-    <div class="header__image">
-
+    <div class="container">
+      <img src="/images/illustration-intro.svg" alt="">
+      <div class="header__title">
+        <h2>Bring everyone together to build better products.</h2>
+        <p>Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+        <a href="#" class="btn btn-accent">Get Started</a>
+      </div>
     </div>
-    <h1>Bring everyone together to build better products.</h1>
-    <p>Manage makes it simple for software teams to plan day-to-day 
-      tasks while keeping the larger team goals in view.</p>
-    <a href="#" class="btn">Get Started</a>
   </header>
 
-  <section>
-    <h2>What’s different about Manage?</h2>
-    <p>Manage provides all the functionality your team needs, without 
-      the complexity. Our software is tailor-made for modern digital 
-      product teams.</p>
-  </section>
+  <main>
+    <section>
+      <div class="container">
+        <h3>What’s different about Manage?</h3>
+        <p>Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams.</p>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <input type="text">
-    <a href="#">Go</a>
+    <section class="features">
+      <div class="container">
+        <h2>What they've said</h2>
+        <h3>Ali Bravo</h3>
+        <a href="#" class="btn btn-accent">Get Started</a>
+      </div>
+    </section>
 
-    <div class="footer__nav">
-      <ul>
-        <li class="footer__item"><a href="#" class="footer__link"></a>Pricing</li>
+    <section class="bg-accent">
+      <div class="container">
+        <h2>Simplify how your team works today.</h2>
+        <a href="#" class="btn btn-light">Get Started</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer bg-dark">
+    <div class="container">
+      <input type="text">
+      <a href="#" class="btn btn-accent">Go</a>
+
+      <ul class="footer__nav">
+        <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Pricing</a></li>
         <li class="footer__item"><a href="#" class="footer__link">Product</a></li>
         <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
         <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
         <li class="footer__item"><a href="#" class="footer__link">Community</a></li>
-        <li class="footer__item"><a href="#" class="btn footer__link">Privacy Policy</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
       </ul>
-    </div>
+  
+      <ul class="footer__soc flex">
+        <li><a href="#" class=" footer__link"><img src="/images/icon-facebook.svg" alt=""></a></li>
+        <li><a href="#" class="footer__link"><img src="/images/icon-youtube.svg" alt=""></a></li>
+        <li><a href="#" class=" footer__link"><img src="/images/icon-twitter.svg" alt=""></a></li>
+        <li><a href="#" class=" footer__link"><img src="/images/icon-pinterest.svg" alt=""></a></li>
+        <li><a href="#" class=" footer__link"><img src="/images/icon-instagram.svg" alt=""></a></li>
+      </ul>
 
-    <div class="footerSocial">
-      <img src="/images/icon-facebook.svg" alt="">
-      <img src="/images/icon-youtube.svg" alt="">
-      <img src="/images/icon-twitter.svg"  alt="">
-      <img src="/images/icon-pinterest.svg" alt="">
-      <img src="/images/icon-instagram.svg" alt="">
-    </div>
-
-    <div class="footer__copyright">
-      <p>Copyright 2020. All Rights Reserved</p>
+      <div class="footer__cpr">
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
     </div>
   </footer>
 
