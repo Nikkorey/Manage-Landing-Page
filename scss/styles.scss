@@ -114,6 +114,17 @@ body {
 /* Navigation */
 .nav__list {
   display: none;
+
+  @media #{(min-width: 1024px)} {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav__menu {
+  @media #{(min-width: 1024px)} {
+    display: none;
+  }
 }
 
 /* Header */

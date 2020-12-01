@@ -111,6 +111,19 @@ body {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
 /* Header */
 @media (min-width: 1024px) {
   .header {
